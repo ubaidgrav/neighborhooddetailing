@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Neighborhood Detailing</title>
+    <meta name="description" content="Contact Neighborhood Detailing for professional auto detailing services in Newark, NJ. Call (973) 495-8434 or use our online booking form.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="Neighborhood Detailing Logo" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="tel:+19734958434" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for a free quote or to schedule your detailing service</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-row">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours with a free estimate.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Information</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="Year, Make, Model (e.g., 2020 Honda Accord)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="exterior">Exterior Cleaning & Detailing</option>
+                                <option value="interior">Interior Detailing & Deep Clean</option>
+                                <option value="waxing">Waxing & Paint Protection</option>
+                                <option value="correction">Paint Correction & Restoration</option>
+                                <option value="complete">Complete Detail Package</option>
+                                <option value="custom">Custom Service (specify in message)</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Service Location *</label>
+                            <input type="text" id="location" name="location" placeholder="Your address or preferred location" required>
+                            <span class="error-message" id="locationError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date</label>
+                            <input type="date" id="preferredDate" name="preferredDate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your vehicle's condition, specific concerns, or special requests..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for detailing tips and special offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage">
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting Neighborhood Detailing. We'll review your request and get back to you within 24 hours with a personalized quote.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="contact-card">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Call Us</h4>
+                                    <p><a href="tel:+19734958434">(973) 495-8434</a></p>
+                                    <span>Mon-Sat: 8AM-6PM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email Us</h4>
+                                    <p><a href="mailto:info@neighborhooddetailing.com">info@neighborhooddetailing.com</a></p>
+                                    <span>We respond within 24 hours</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Service Area</h4>
+                                    <p>Newark, NJ & Surrounding Areas</p>
+                                    <span>Mobile service - we come to you!</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                                    <p>Sunday: 10:00 AM - 4:00 PM</p>
+                                    <span>Emergency services available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-contact">
+                        <h3>Need Immediate Service?</h3>
+                        <p>For urgent requests or same-day service, call us directly.</p>
+                        <a href="tel:+19734958434" class="btn btn-secondary btn-large">
+                            <i class="fas fa-phone"></i> Call (973) 495-8434
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Service Area</h2>
+                <p>We provide mobile detailing services throughout Newark and the surrounding communities</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48377.944152263435!2d-74.31472847832032!3d40.72718149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253ce2c2b44df%3A0x6d3b15502caa0d66!2sNewark%2C%20NJ!5e0!3m2!1sen!2sus!4v1642523456789!5m2!1sen!2sus" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Newark, NJ Service Area - Neighborhood Detailing">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How far do you travel for mobile service?</h4>
+                    <p>We service all of Newark and surrounding areas within a 15-mile radius. Contact us to confirm we serve your location.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does a typical detail take?</h4>
+                    <p>Exterior details typically take 2-3 hours, interior details 1-2 hours, and complete packages 4-6 hours depending on vehicle size and condition.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you provide your own water and electricity?</h4>
+                    <p>Yes! We bring our own water supply and can work with or without access to your electricity using our portable equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Neighborhood Detailing">
+                        <p>Premium auto detailing services in Newark, NJ and surrounding areas.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (973) 495-8434</p>
+                        <p><i class="fas fa-envelope"></i> info@neighborhooddetailing.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Newark, NJ Area</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neighborhood Detailing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
